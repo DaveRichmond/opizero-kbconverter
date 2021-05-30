@@ -1,0 +1,5 @@
+config BR2_PACKAGE_PYTHON_EVDEV
+	bool "python-evdev"
+	select BR2_PACKAGE_PYTHON_SIX
+	help
+	  evdev allows accessing the linux event subsystem

@@ -1,0 +1,1 @@
+source "$BR2_EXTERNAL_OPIZERO_PATH/package/python-evdev/Config.in"
