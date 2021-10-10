@@ -4,7 +4,8 @@ pipeline {
 	stages {
 		stage('Build'){
 			cache(maxCacheSize: 1024, caches: [
-				[$class: 'ArbitraryFileCache', path: '${GIT_CHECKOUT_DIR}/buildroot', includes: 'dl/**'])
+				[$class: 'ArbitraryFileCache', path: '${GIT_CHECKOUT_DIR}/buildroot', includes: 'dl/**']
+			])
 			steps {
 				checkout scm
 				sh 'git submodule update --init --recursive'
